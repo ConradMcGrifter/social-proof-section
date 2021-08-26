@@ -1,39 +1,20 @@
-.ratings-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: auto;
-    max-width: 45rem;
-    width: 100%;
+// rating component
+.rating-wrap {
+    @include flexCenter();
+    justify-content: flex-start;
+    background: color(neutral-light-grayish-magenta);
+    padding: 1em 1.5em;
+    border-radius: 0.5rem;
+    width: 40rem;
 
-    // rating component
-    > .rating-wrap {
-        @include flexCenter();
-        justify-content: flex-start;
-        background: color(neutral-light-grayish-magenta);
-        padding: 1em 1.5em;
-        border-radius: 0.5rem;
-        width: 40rem;
-
-        > .ratingText {
-            font-size: 1.3rem;
-            margin-left: 3rem;
-        }
-
-        > .star {
-            & + .star {
-                margin-left: 0.5rem;
-            }
-        }
+    > .ratingText {
+        font-size: 1.3rem;
+        margin-left: 3rem;
     }
 
-    > .rating-wrap + .rating-wrap {
-        margin-top: 1em;
+    > .star {
+        & + .star {
+            margin-left: 0.5rem;
+        }
     }
-}
-
-// testimonial cards
-.testimonial-container {
-    display: flex;
-    width: 100%;
 }
