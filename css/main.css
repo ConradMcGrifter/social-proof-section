@@ -22,5 +22,105 @@ body {
   font-size: 1.5rem;
   background: #ee68a4;
   font-family: "Spartan", sans-serif, arial;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.main-content {
+  max-width: 100rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.intro-text-container {
+  max-width: 35ch;
+}
+
+.intro-text-container > .title {
+  font-size: 5rem;
+}
+
+.intro-text-container > .info {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.ratings-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: auto;
+  max-width: 45rem;
+  width: 100%;
+}
+
+.ratings-container > .rating-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background: #f7f2f7;
+  padding: 1em 1.5em;
+  border-radius: 0.5rem;
+  width: 40rem;
+}
+
+.ratings-container > .rating-wrap + .rating-wrap {
+  margin-top: 1em;
+}
+
+.ratings-container > .rating-wrap > .ratingText {
+  font-size: 1.5rem;
+}
+
+.testimonial-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+._marginLeft {
+  margin-left: auto !important;
+}
+
+._marginCenter {
+  margin: auto !important;
+}
+
+._marginCenterHorizontal {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+._marginRight {
+  margin-right: auto !important;
 }
 /*# sourceMappingURL=main.css.map */

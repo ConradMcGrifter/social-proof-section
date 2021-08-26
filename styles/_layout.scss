@@ -1,0 +1,50 @@
+.main-content {
+    max-width: 100rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.intro-text-container {
+    max-width: 35ch;
+
+    > .title {
+        font-size: 5rem;
+    }
+
+    > .info {
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+}
+
+.ratings-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    max-width: 45rem;
+    width: 100%;
+
+    > .rating-wrap {
+        @include flexCenter();
+        justify-content: flex-start;
+        background: color(neutral-light-grayish-magenta);
+        padding: 1em 1.5em;
+        border-radius: 0.5rem;
+        width: 40rem;
+    }
+
+    > .rating-wrap + .rating-wrap {
+        margin-top: 1em;
+    }
+
+    > .rating-wrap > .ratingText {
+        font-size: 1.5rem;
+    }
+}
+
+.testimonial-container {
+    display: flex;
+    width: 100%;
+}

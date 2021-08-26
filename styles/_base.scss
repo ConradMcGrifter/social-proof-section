@@ -19,4 +19,6 @@ body {
     font-size: 1.5rem;
     background: color(primary-soft-pink);
     font-family: $font-stack;
+    display: grid;
+    place-items: center;
 }
