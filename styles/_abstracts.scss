@@ -1,3 +1,5 @@
+$font-stack: "Spartan", sans-serif, arial;
+
 $colors: (
     primary-very-dark-magenta: hsl(300, 43%, 22%),
     primary-soft-pink: hsl(333, 80%, 67%),
@@ -7,4 +9,18 @@ $colors: (
 
 @function color($color-name) {
     @return map-get($colors, $color-name);
+}
+
+@mixin flexCenter($direction: row) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: $direction;
+}
+
+// 950px
+@mixin desktopSize() {
+    @media only screen and (min-width: 59.375em) {
+        @content;
+    }
 }
