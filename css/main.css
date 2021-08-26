@@ -16,6 +16,14 @@
   margin-right: auto !important;
 }
 
+._marginBottom {
+  margin-bottom: auto !important;
+}
+
+._marginTop {
+  margin-top: auto !important;
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -37,11 +45,14 @@ html {
 body {
   min-height: 100%;
   font-size: 1.5rem;
-  background: #ee68a4;
   font-family: "Spartan", sans-serif, arial;
   display: -ms-grid;
   display: grid;
   place-items: center;
+}
+
+p {
+  line-height: 1.6;
 }
 
 .rating-wrap {
@@ -62,22 +73,81 @@ body {
       -ms-flex-pack: start;
           justify-content: flex-start;
   background: #f7f2f7;
-  padding: 1em 1.5em;
+  padding: 1.25em;
   border-radius: 0.5rem;
-  width: 40rem;
 }
 
 .rating-wrap > .ratingText {
   font-size: 1.3rem;
   margin-left: 3rem;
+  color: #502050;
 }
 
 .rating-wrap > .star + .star {
   margin-left: 0.5rem;
 }
 
+.testimonial-card {
+  background: #502050;
+  padding: 2.25em 2em;
+  border-radius: 0.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.testimonial-card > .wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.testimonial-card > .wrap .avatar {
+  width: 4rem;
+  border-radius: 999px;
+  margin-right: 2rem;
+}
+
+.testimonial-card > .wrap .wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.testimonial-card > .wrap .wrap .name {
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.testimonial-card > .wrap .wrap .verified {
+  font-size: 1.5rem;
+  color: #ee68a4;
+  font-weight: 400;
+}
+
+.testimonial-card .testimonial {
+  color: white;
+  font-weight: 500;
+  font-size: 1.3rem;
+  margin-top: 2rem;
+}
+
 .main-content {
-  max-width: 100rem;
+  max-width: 110rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -102,11 +172,15 @@ body {
 
 .intro-text-container > .title {
   font-size: 5rem;
+  color: #502050;
 }
 
 .intro-text-container > .info {
   font-size: 1.4rem;
   font-weight: 500;
+  line-height: 1.6;
+  margin-top: 1.5rem;
+  color: #937b92;
 }
 
 .ratings-container {
@@ -121,8 +195,12 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   margin-left: auto;
-  max-width: 45rem;
+  max-width: 48rem;
   width: 100%;
+}
+
+.ratings-container .rating-wrap {
+  width: 40rem;
 }
 
 .ratings-container .rating-wrap + .rating-wrap {
@@ -134,5 +212,13 @@ body {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  gap: 2rem;
+  height: 26rem;
+  margin-top: 6rem;
+}
+
+.testimonial-container .testimonial-card {
+  width: 100%;
+  min-height: 22rem;
 }
 /*# sourceMappingURL=main.css.map */
