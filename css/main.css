@@ -66,12 +66,17 @@ body {
   width: 40rem;
 }
 
-.ratings-container > .rating-wrap + .rating-wrap {
-  margin-top: 1em;
+.ratings-container > .rating-wrap > .ratingText {
+  font-size: 1.3rem;
+  margin-left: 3rem;
 }
 
-.ratings-container > .rating-wrap > .ratingText {
-  font-size: 1.5rem;
+.ratings-container > .rating-wrap > .star + .star {
+  margin-left: 0.5rem;
+}
+
+.ratings-container > .rating-wrap + .rating-wrap {
+  margin-top: 1em;
 }
 
 .testimonial-container {
