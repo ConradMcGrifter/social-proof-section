@@ -8,11 +8,12 @@
 
     .ratingText {
         font-size: 1.3rem;
+        font-weight: 700;
         margin-left: 3rem;
         color: color(primary-very-dark-magenta);
     }
 
-    .star {
+    .stars--wrap > .star {
         & + .star {
             margin-left: 0.5rem;
         }
@@ -39,16 +40,17 @@
         }
 
         // this wraps the name and verified heading text
-        .wrap {
+        > .wrap {
             display: flex;
             flex-direction: column;
 
             .name {
                 color: white;
                 margin-bottom: 0.5rem;
+                font-size: 1.4rem;
             }
             .verified {
-                font-size: 1.5rem;
+                font-size: 1.4rem;
                 color: color(primary-soft-pink);
                 font-weight: 400;
             }

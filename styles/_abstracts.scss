@@ -18,9 +18,45 @@ $colors: (
     flex-direction: $direction;
 }
 
-// 950px
 @mixin mobileSize() {
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 900px) {
         @content;
+    }
+}
+
+@mixin alignment() {
+    &.alignStart {
+        align-self: start;
+        @include mobileSize() {
+            align-self: unset;
+        }
+    }
+
+    &.-alignCenter {
+        align-self: center;
+        @include mobileSize() {
+            align-self: unset;
+        }
+    }
+
+    &.-alignEnd {
+        align-self: end;
+        @include mobileSize() {
+            align-self: unset;
+        }
+    }
+
+    &.-alignTop {
+        align-self: flex-start;
+        @include mobileSize() {
+            align-self: unset;
+        }
+    }
+
+    &.-alignBottom {
+        align-self: flex-end;
+        @include mobileSize() {
+            align-self: unset;
+        }
     }
 }
