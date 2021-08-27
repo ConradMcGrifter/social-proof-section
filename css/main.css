@@ -414,4 +414,10 @@ p {
         align-self: unset;
   }
 }
+
+@media only screen and (max-width: 1000px) {
+  .testimonial-container .testimonial-card {
+    height: 100%;
+  }
+}
 /*# sourceMappingURL=main.css.map */

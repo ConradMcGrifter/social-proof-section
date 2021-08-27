@@ -14,5 +14,10 @@
         width: 100%;
         min-height: 22rem;
         @include alignment;
+
+        // this media query forces the cards to take up the space of the container when shrinking down to smaller screen size
+        @media only screen and (max-width: 1000px) {
+            height: 100%;
+        }
     }
 }
