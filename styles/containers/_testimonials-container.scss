@@ -1,0 +1,18 @@
+.testimonial-container {
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+    min-height: 26rem;
+    margin-top: 6rem;
+
+    @include mobileSize {
+        flex-wrap: wrap;
+    }
+
+    // position /  size / mediaQuery styles for the testimonial card component
+    .testimonial-card {
+        width: 100%;
+        min-height: 22rem;
+        @include alignment;
+    }
+}

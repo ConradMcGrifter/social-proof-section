@@ -1,0 +1,36 @@
+.ratings-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    max-width: 48rem;
+    width: 100%;
+    @include mobileSize {
+        align-items: center;
+        margin-left: unset;
+        margin-top: 3rem;
+        max-width: unset;
+    }
+
+    // position /  size / mediaQuery styles for the rating component
+    .rating-wrap {
+        width: 40rem;
+        @include alignment;
+
+        @include mobileSize {
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .ratingText {
+            @include mobileSize {
+                margin-left: unset;
+                margin-top: 1rem;
+            }
+        }
+    }
+
+    .rating-wrap + .rating-wrap {
+        margin-top: 1em;
+    }
+}

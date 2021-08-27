@@ -1,3 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
-@import "abstracts", "base", "components";
-@import "layout/containers";
+@import "abstracts", "base";
+@import "components/rating", "components/testimonial-card";
+@import "containers/general-containers", "containers/ratings-container",
+    "containers/testimonials-container";
