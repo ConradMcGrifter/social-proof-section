@@ -8,6 +8,13 @@ html {
   font-size: 62.5%;
 }
 
+@media only screen and (max-width: 900px) {
+  html {
+    height: unset;
+    min-height: 100%;
+  }
+}
+
 *,
 *::before,
 *::after {
@@ -42,6 +49,7 @@ body {
   body {
     background: url("../images/bg-pattern-top-mobile.svg") no-repeat, url("../images/bg-pattern-bottom-mobile.svg") no-repeat;
     background-position: top left, bottom right;
+    background-size: auto, contain;
   }
 }
 
@@ -187,6 +195,7 @@ p {
 .intro-text-container .title {
   font-size: clamp(3rem, 5vw, 5rem);
   color: #502050;
+  line-height: 1;
 }
 
 .intro-text-container .info {
@@ -258,8 +267,7 @@ p {
 
 .ratings-container .rating-wrap.-alignEnd {
   -ms-flex-item-align: end;
-      -ms-grid-row-align: end;
-      align-self: end;
+      align-self: flex-end;
 }
 
 @media only screen and (max-width: 900px) {
@@ -369,8 +377,7 @@ p {
 
 .testimonial-container .testimonial-card.-alignEnd {
   -ms-flex-item-align: end;
-      -ms-grid-row-align: end;
-      align-self: end;
+      align-self: flex-end;
 }
 
 @media only screen and (max-width: 900px) {

@@ -40,7 +40,7 @@ $colors: (
     }
 
     &.-alignEnd {
-        align-self: end;
+        align-self: flex-end;
         @include mobileSize() {
             align-self: unset;
         }

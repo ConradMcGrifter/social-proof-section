@@ -4,6 +4,11 @@ html {
     margin: 0;
     padding: 0;
     font-size: 62.5%;
+
+    @include mobileSize {
+        height: unset;
+        min-height: 100%;
+    }
 }
 
 *,
@@ -28,6 +33,7 @@ body {
         background: url("../images/bg-pattern-top-mobile.svg") no-repeat,
             url("../images/bg-pattern-bottom-mobile.svg") no-repeat;
         background-position: top left, bottom right;
+        background-size: auto, contain;
     }
 }
 
