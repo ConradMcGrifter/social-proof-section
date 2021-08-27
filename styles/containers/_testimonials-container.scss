@@ -19,5 +19,10 @@
         @media only screen and (max-width: 1000px) {
             height: 100%;
         }
+
+        @include mobileSize {
+            height: unset;
+            min-height: unset;
+        }
     }
 }
