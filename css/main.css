@@ -8,7 +8,7 @@ html {
   font-size: 62.5%;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 800px) {
   html {
     height: unset;
     min-height: 100%;
@@ -45,7 +45,7 @@ body {
   background-position: top left, bottom right;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 800px) {
   body {
     background: url("../images/bg-pattern-top-mobile.svg") no-repeat, url("../images/bg-pattern-bottom-mobile.svg") no-repeat;
     background-position: top left, bottom right;
@@ -172,7 +172,7 @@ p {
   width: 100%;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 800px) {
   .main-content > .wrap {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -183,10 +183,11 @@ p {
 }
 
 .intro-text-container {
+  margin-right: 2rem;
   max-width: 35ch;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 800px) {
   .intro-text-container {
     text-align: center;
   }
@@ -222,7 +223,7 @@ p {
   width: 100%;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 800px) {
   .ratings-container {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -243,7 +244,7 @@ p {
       align-self: start;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 800px) {
   .ratings-container .rating-wrap.alignStart {
     -ms-flex-item-align: unset;
         -ms-grid-row-align: unset;
@@ -257,7 +258,7 @@ p {
       align-self: center;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 800px) {
   .ratings-container .rating-wrap.-alignCenter {
     -ms-flex-item-align: unset;
         -ms-grid-row-align: unset;
@@ -270,7 +271,7 @@ p {
       align-self: flex-end;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 800px) {
   .ratings-container .rating-wrap.-alignEnd {
     -ms-flex-item-align: unset;
         -ms-grid-row-align: unset;
@@ -283,7 +284,7 @@ p {
       align-self: flex-start;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 800px) {
   .ratings-container .rating-wrap.-alignTop {
     -ms-flex-item-align: unset;
         -ms-grid-row-align: unset;
@@ -296,7 +297,7 @@ p {
       align-self: flex-end;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 800px) {
   .ratings-container .rating-wrap.-alignBottom {
     -ms-flex-item-align: unset;
         -ms-grid-row-align: unset;
@@ -304,7 +305,7 @@ p {
   }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 800px) {
   .ratings-container .rating-wrap {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -314,7 +315,7 @@ p {
   }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 800px) {
   .ratings-container .rating-wrap .ratingText {
     margin-left: unset;
     margin-top: 1rem;
@@ -335,7 +336,7 @@ p {
   margin-top: 6rem;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 800px) {
   .testimonial-container {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -353,7 +354,7 @@ p {
       align-self: start;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 800px) {
   .testimonial-container .testimonial-card.alignStart {
     -ms-flex-item-align: unset;
         -ms-grid-row-align: unset;
@@ -367,7 +368,7 @@ p {
       align-self: center;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 800px) {
   .testimonial-container .testimonial-card.-alignCenter {
     -ms-flex-item-align: unset;
         -ms-grid-row-align: unset;
@@ -380,7 +381,7 @@ p {
       align-self: flex-end;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 800px) {
   .testimonial-container .testimonial-card.-alignEnd {
     -ms-flex-item-align: unset;
         -ms-grid-row-align: unset;
@@ -393,7 +394,7 @@ p {
       align-self: flex-start;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 800px) {
   .testimonial-container .testimonial-card.-alignTop {
     -ms-flex-item-align: unset;
         -ms-grid-row-align: unset;
@@ -406,7 +407,7 @@ p {
       align-self: flex-end;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 800px) {
   .testimonial-container .testimonial-card.-alignBottom {
     -ms-flex-item-align: unset;
         -ms-grid-row-align: unset;

@@ -20,6 +20,7 @@
 
 // holds the h1 and h2 intro text
 .intro-text-container {
+    margin-right: 2rem;
     max-width: 35ch;
     @include mobileSize {
         text-align: center;
