@@ -10,6 +10,10 @@
     > .wrap {
         display: flex;
         width: 100%;
+
+        @include mobileSize {
+            flex-wrap: wrap;
+        }
     }
 }
 
@@ -48,7 +52,7 @@
     }
 }
 
-// testimonial cards
+// this holds the testimonial cards
 .testimonial-container {
     display: flex;
     width: 100%;

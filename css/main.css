@@ -3,6 +3,12 @@
   margin-left: auto !important;
 }
 
+@media only screen and (max-width: 37.5em) {
+  ._marginLeft {
+    margin-left: 0 !important;
+  }
+}
+
 ._marginCenter {
   margin: auto !important;
 }
@@ -12,8 +18,21 @@
   margin-right: auto !important;
 }
 
+@media only screen and (max-width: 37.5em) {
+  ._marginCenterHorizontal {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
 ._marginRight {
   margin-right: auto !important;
+}
+
+@media only screen and (max-width: 37.5em) {
+  ._marginRight {
+    margin-right: 0 !important;
+  }
 }
 
 ._marginBottom {
@@ -176,6 +195,13 @@ p {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .main-content > .wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .intro-text-container {

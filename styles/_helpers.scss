@@ -1,5 +1,9 @@
 ._marginLeft {
     margin-left: auto !important;
+
+    @include mobileSize {
+        margin-left: 0 !important;
+    }
 }
 
 ._marginCenter {
@@ -9,10 +13,19 @@
 ._marginCenterHorizontal {
     margin-left: auto !important;
     margin-right: auto !important;
+
+    @include mobileSize {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
 }
 
 ._marginRight {
     margin-right: auto !important;
+
+    @include mobileSize {
+        margin-right: 0 !important;
+    }
 }
 
 ._marginBottom {
